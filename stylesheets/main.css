@@ -27,14 +27,12 @@
 @keyframes anim3 {
   from {
     opacity: 0;
-    visibility: hidden;
   }
   to {
     opacity: 1;
-    visibility: visible;
   }
 }
-/* line 37, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 .pre {
   position: fixed;
   top: 0;
@@ -47,7 +45,7 @@
   visibility: visible;
   background: #A3FCB5;
 }
-/* line 48, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .pre .circle {
   position: absolute;
   left: 50%;
@@ -61,7 +59,7 @@
   animation: anim 1s linear infinite;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 .pre {
   position: absolute;
   left: 50%;
@@ -69,18 +67,18 @@
   transform: translate(-50%, -50%);
 }
 
-/* line 67, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .pre.done {
   opacity: 0;
   visibility: hidden;
 }
 
-/* line 71, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 body {
   background: #1BBC9B;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .xlop1 {
   width: 250px;
   float: left;
@@ -88,7 +86,7 @@ body {
   bottom: 0;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .xlop2 {
   width: 250px;
   transform: scale(-1, 1);
@@ -97,14 +95,14 @@ body {
   right: 0;
 }
 
-/* line 88, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 #wrapper {
   perspective: 500px;
   width: auto;
   height: auto;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 .table {
   opacity: 1;
   padding-top: 80px;
@@ -115,32 +113,43 @@ body {
   font-family: 'Arial', sans-serif;
   font-size: 40px;
   transition: .5s all;
-  top: 300px;
+  top: 250px;
   left: 50%;
   transform: translate(-50%);
   color: white;
 }
 
-/* line 108, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
+.table1 {
+  z-index: 10;
+  top: -90px;
+}
+
+/* line 110, ../sass/main.scss */
+.table2 {
+  top: -400px;
+}
+
+/* line 113, ../sass/main.scss */
 .fadeInUp {
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: none;
-  opacity: 1;
+  opacity: 0;
 }
 
-/* line 114, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .fade {
-  visibility: hidden;
   opacity: 0;
-  display: none;
   animation-duration: 2s;
   animation-fill-mode: both;
   animation-name: none;
 }
 
-/* line 122, ../sass/main.scss */
-.table1 {
-  height: 1000px;
-  top: 1000px;
+/* line 125, ../sass/main.scss */
+.fade1 {
+  opacity: 0;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-name: none;
 }

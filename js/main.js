@@ -4,7 +4,7 @@ document.body.onload = function() {
       if(!pre.classList.contains('done')){
         pre.classList.add('done');
         setTimeout(function () {
-          $('.animated').css('animation-name', 'anim1');
+          $('.fadeInUp').css('animation-name', 'anim1');
         }, 500);
     }
   }, 3000);
@@ -13,5 +13,11 @@ setTimeout(function () {
   $('.fadeInUp').css('animation-name', 'anim2');
   setTimeout(function () {
     $('.fade').css('animation-name', 'anim3');
-  },1000);
+    setTimeout(function () {
+      $('.fade').css('animation-name', 'anim2');
+      setTimeout(function () {
+        $('.fade1').css('animation-name', 'anim3');
+    },2000)
+    },3000);
+  },2000);
 }, 6000);
